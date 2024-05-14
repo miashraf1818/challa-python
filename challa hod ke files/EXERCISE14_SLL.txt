@@ -1,0 +1,33 @@
+#EXERCISE 14 : Deleting the node from the begining  in   Singly Linked List.
+
+class Node:
+    def __init__(self,data):
+        self.data = data
+        self.next=None
+
+# Creating Nodes
+
+head = Node(100)
+node2 = Node(200)
+node3 = Node(300)
+node4 = Node(400)
+
+
+# Connecting nodes to form a Linked list
+
+head.next = node2
+node2.next = node3
+node3.next = node4
+
+# Deleting the node from thebegining
+
+if head is not None :
+    head = head.next  # Update the head node to the next node
+
+# Printing the Updated Linked list
+
+current = head
+while current is not None :
+    print(current.data,end = "-> ")
+    current = current.next
+print("None")

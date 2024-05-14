@@ -1,0 +1,76 @@
+			EXERCISE 6 : IMPLEMENT QUEUE OPERATIONS USING PYTHON 
+CODE SNIPPET:
+queue = []
+def enqueue():
+    item = input("Enter the item : ")
+    queue.append(item)
+    print(item,"is inserted to queue ")
+def dequeue():
+    if not queue:
+        print("Underflow(empty Queue) ")
+    else:
+        item = queue.pop(0)
+        print("Deleted item = ",item)
+def display():
+    print(queue)
+
+while True:
+    print("Select the operation 1.Insert 2.Delete 3.Display 4.Quit \n")
+    choice = int(input())
+    if choice == 1:
+        enqueue()
+    elif choice == 2:
+        dequeue()
+    elif choice == 3:
+        display()
+    elif choice == 4:
+        break
+    else:
+        print("Enter Correct Operation ")
+
+				SAMPLE OUTPUT
+
+Select the operation 1.Insert 2.Delete 3.Display 4.Quit 
+
+1
+Enter the item : 100
+100 is inserted to queue 
+Select the operation 1.Insert 2.Delete 3.Display 4.Quit 
+
+1
+Enter the item : 200
+200 is inserted to queue 
+Select the operation 1.Insert 2.Delete 3.Display 4.Quit 
+
+1
+Enter the item : 300
+300 is inserted to queue 
+Select the operation 1.Insert 2.Delete 3.Display 4.Quit 
+
+3
+['100', '200', '300']
+Select the operation 1.Insert 2.Delete 3.Display 4.Quit 
+
+2
+Deleted item =  100
+Select the operation 1.Insert 2.Delete 3.Display 4.Quit 
+
+2
+Deleted item =  200
+Select the operation 1.Insert 2.Delete 3.Display 4.Quit 
+
+2
+Deleted item =  300
+Select the operation 1.Insert 2.Delete 3.Display 4.Quit 
+
+2
+Underflow(empty Queue) 
+Select the operation 1.Insert 2.Delete 3.Display 4.Quit 
+
+3
+[]
+Select the operation 1.Insert 2.Delete 3.Display 4.Quit 
+
+4
+
+Process finished with exit code 0

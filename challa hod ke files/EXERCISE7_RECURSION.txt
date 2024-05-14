@@ -1,0 +1,21 @@
+# EXERCISE 7 : Implement finding factorial of a given number using recursion
+code snippet:
+
+def fact(n): # Function definition
+    if n == 0:
+        res = 1
+    else:
+        res = n * fact(n-1)
+    return res
+
+# __MAIN()__
+n = int(input(" Enter the Number "))
+result = fact(n)
+print(" Factorial = ",result)
+
+			SAMPLE OUTPUT
+
+Enter the Number 5
+Factorial =  120
+
+Process finished with exit code 0

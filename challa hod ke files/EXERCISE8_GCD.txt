@@ -1,0 +1,22 @@
+EXERCISE : WRITE A RECURSIVE PYTHON CODE SNIPPET TO FIND GCD OF 2 NUMBERS
+
+CODE SNIPPET :
+
+def gcd(a,b):
+    if a == 0 :
+        return b
+    elif b == 0 :
+        return a
+    else:
+        return(gcd(b,a%b))
+a = int(input("Enter a "))
+b = int(input("Enter b "))
+print("The gcd of",a,"and",b,"is",gcd(a,b))
+
+ O U T P U T
+
+Enter a 20
+Enter b 40
+The gcd of 20 and 40 is 20
+
+Process finished with exit code 0
